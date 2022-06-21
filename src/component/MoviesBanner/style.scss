@@ -1,0 +1,32 @@
+@import "../../styles/variable.scss";
+
+.movies-poster {
+  h3 {
+    padding: $size + 5 0;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      &:not(:last-child) {
+        margin-right: $size + 5;
+      }
+
+      img {
+        width: 100%;
+        height: 200px;
+        width: 132px;
+        border-radius: 10px;
+        border: 5px solid $white;
+        transition: .2s;
+        &:hover {
+          box-shadow: 0 0 7px #fff;
+          cursor: pointer;
+          transition: .2s;
+          transform: rotate(5deg) scale(1);
+        }
+      }
+    }
+  }
+}

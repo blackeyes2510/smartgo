@@ -1,0 +1,73 @@
+@import "../../styles//variable.scss";
+
+.login-wrapper {
+  .login-img {
+    background: url(../../images/login.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      li {
+        display: inline-block;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 150px;
+        height: 150px;
+        border: 5px solid #fff;
+        box-shadow: 0 0 9px #555;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          //   border: 5px solid $red;
+          transition: 0.2s;
+          box-shadow: 0 0 9px #000;
+          cursor: pointer;
+          img {
+            // -webkit-transform: scale(1);
+            // transform: scale(1);
+            -webkit-transform: rotate(15deg) scale(1.2);
+            transform: rotate(15deg) scale(1.2);
+          }
+        }
+        &:not(:last-child) {
+          margin-right: $size + 5;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          -webkit-transform: rotate(0) scale(1);
+          transform: rotate(0) scale(1);
+          -webkit-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out;
+
+          //   -webkit-transform: scale(1.5);
+          //   transform: scale(1.5);
+          //   -webkit-transition: 0.3s ease-in-out;
+          //   transition: 0.3s ease-in-out;
+        }
+        button {
+          background: $white;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+          &:hover {
+            svg {
+              color: $black;
+            }
+          }
+          svg {
+            font-size: 60px;
+            color: #999;
+          }
+        }
+      }
+    }
+  }
+}

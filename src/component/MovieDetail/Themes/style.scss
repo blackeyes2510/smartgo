@@ -1,0 +1,24 @@
+@import "../../../styles/variable.scss";
+
+.themes-wrapper {
+  h3 {
+    padding-bottom: $size;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      margin-right: $size + 10;
+      margin-bottom: $size;
+      padding: $size - 2 $size + 6;
+      border-radius: $size + 10;
+      transition: 0.2s;
+      &:hover {
+        background: $white;
+        color: $black;
+        transition: 0.2s;
+        cursor: pointer;
+      }
+    }
+  }
+}

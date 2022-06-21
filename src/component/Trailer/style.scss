@@ -1,0 +1,39 @@
+@import "../../styles/variable.scss";
+
+.trailer {
+  position: relative;
+
+  .mute-btns {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+
+    button {
+      color: $white;
+      padding-left: $size;
+      cursor: pointer;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .awssld__bullets {
+    display: none;
+  }
+
+  .awssld__content {
+    display: block;
+  }
+
+  .awssld__container {
+    padding-bottom: 56.3%;
+  }
+
+  // .awssld__controls {
+  //   button {
+  //     top: 20% !important;
+  //   }
+  // }
+}

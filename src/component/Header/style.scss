@@ -1,0 +1,46 @@
+@import "../../styles/variable.scss";
+
+.header-wrapper {
+  background: $black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #111;
+  .header-left {
+    display: flex;
+    align-items: center;
+    h2 {
+      padding: $size + 5 $size + 10;
+      a {
+        color: $white;
+        font-weight: normal;
+      }
+    }
+    nav {
+      a {
+        padding: $size + 10;
+        color: $white;
+        &:hover,
+        &.active {
+          background: $red;
+        }
+      }
+    }
+  }
+  .header-right {
+    margin-right: $size + 10;
+    .input {
+      background: $white;
+      border-radius: 3px;
+      width: 100%;
+      input {
+        width: 90%;
+        padding: $size;
+      }
+    }
+  }
+}
