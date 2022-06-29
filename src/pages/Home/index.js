@@ -1,7 +1,9 @@
+import React from 'react'
 import { useState } from 'react'
 import Banner from '../../component/Banner'
-import MovieDetail from '../../component/MovieDetail'
-import MoviesBanner from '../../component/MoviesBanner'
+// import MovieDetail from '../../component/MovieDetail'
+// import MoviesBanner from '../../component/MoviesBanner'
+import Poster from '../../component/MoviePoster'
 import './style.scss'
 
 const Home = () => {
@@ -11,10 +13,10 @@ const Home = () => {
     return (
         <div>
             <Banner />
-            <MovieDetail />
+            {/* <MovieDetail /> */}
             <div className='movie-poster-splitted'>
                 <div className='movie-poster-left'>
-                    <MoviesBanner />
+                    <Poster />
                 </div>
                 <div className='movie-poster-right'>
                     <div className='button-toggle'>
@@ -22,7 +24,7 @@ const Home = () => {
                             Based on search recommendations
                         </button>
                     </div>
-                    {!hidden ? <MoviesBanner /> : null}
+                    {!hidden ? <Poster /> : null}
                 </div>
             </div>
         </div>

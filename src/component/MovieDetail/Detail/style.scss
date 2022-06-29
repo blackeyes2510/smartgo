@@ -1,20 +1,29 @@
 @import "../../../styles/variable.scss";
 
-.detail-wrapper {
-  display: flex;
-  margin-top: $size + 10;
-  .detail-left {
-    margin-right: $size + 10;
-    img {
-      border: 3px solid $white;
+.movie-list-bg {
+  .movie-list {
+    .details {
+      display: flex;
+
+      .details-left {
+        font-size: large;
+      }
+
+      .details-right {
+        img {
+          width: 100%;
+        }
+      }
     }
-  }
-  .detail-right {
-    .movie-list {
-      position: static;
-      width: auto;
-      transform: translate(0px, 0px);
-      padding-left: 0;
-    }
+
+    // background: none;
+    // position: static;
+    // width: auto;
+    // transform: translate(0, 0);
+    // padding-left: 0;
+    // opacity: 1;
+    // :not(h3) {
+    //   font-size: $size + 4;
+    // }
   }
 }

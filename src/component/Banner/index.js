@@ -1,3 +1,4 @@
+import React from 'react'
 import Trailer from '../../component/Trailer'
 import './style.scss'
 

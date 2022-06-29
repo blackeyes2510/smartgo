@@ -1,3 +1,4 @@
+import React from 'react'
 import LoginComp from '../../component/Login'
 import './style.scss'
 

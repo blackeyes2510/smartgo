@@ -1,5 +1,5 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom'
+import React from 'react'
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import Profile1 from '../../images/login-profile-01.jpg'
@@ -23,13 +23,16 @@ const LoginComp = (props) => {
 
     return (
         <div className='login-wrapper'>
+            <div className='logo-login'>
+                <h3>SmartGo login</h3>
+            </div>
             <div className='login-img'>
                 <ul>
                     <li>
-                        <NavLink exact to="/"><img src={Profile1} alt={Profile1} /></NavLink>
+                        <Link exact to="/"><img src={Profile1} alt={Profile1} /></Link>
                     </li>
                     <li>
-                        <NavLink exact to="/"><img src={Profile2} alt={Profile2} /></NavLink>
+                        <Link exact to="/"><img src={Profile2} alt={Profile2} /></Link>
                     </li>
                     <li>
                         <button onClick={handleClick}>

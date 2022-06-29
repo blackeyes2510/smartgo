@@ -1,3 +1,5 @@
+import React from 'react'
+import { Link } from "react-router-dom";
 import Poster1 from '../../images/Once_Upon_a_Time_in_Hollywood_poster.png'
 import Poster2 from '../../images/220px-The_Crown_season_2.jpeg'
 import Poster3 from '../../images/Avengers_Endgame_poster.jpg'
@@ -16,12 +18,13 @@ import Poster15 from '../../images/Free_Guy_2021_Poster.jpg'
 import Poster16 from '../../images/Ghosts.jpg'
 import './style.scss'
 
+
 const MoviesBanner = () => {
     return (
         <div className='movies-poster'>
             <h3>Top Movies / TV Shows watched</h3>
             <ul>
-                <li><img src={Poster1} alt={Poster1} /></li>
+                <li> <Link to="/detail"><img src={Poster1} alt={Poster1} /></Link></li>
                 <li><img src={Poster2} alt={Poster2} /></li>
                 <li><img src={Poster3} alt={Poster3} /></li>
                 <li><img src={Poster4} alt={Poster4} /></li>
